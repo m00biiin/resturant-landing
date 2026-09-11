@@ -72,5 +72,26 @@
             </ul>
         </nav>
         <video src="video/video.mp4" controls></video>
+        <form action="#" method="post" autocomplete="off" target="_blank" id="reserve">
+            <label for="name">نام:</label>
+            <input type="text" name="name" id="name" required> <br>
+            <label for="email">ایمیل:</label>
+            <input type="email" name="email" id="email"> <br>
+            <label for="chairs">تعداد نفرات:</label>
+            <input type="number" name="chairs" id="chairs" min="1" required> <br>
+            <label for="date">تاریخ:</label>
+            <input type="date" name="date" id="date" required> <br>
+            <label for="time">ساعت</label>
+            <input type="time" name="time" id="time"><br>
+            <label for="tableType">نوع میز</label>
+            <select name="tableType" id="tableType">
+                <option value="circle">گرد</option>
+                <option value="rectangle" selected>مستطیل</option>
+            </select> <br>
+            <textarea name="explanation" id="explanation" placeholder="توضیحات اضافی..."></textarea> <br>
+            <label for="rules">پذیرش قوانین</label>
+            <input type="checkbox" name="rules" id="rules" required><br>
+            <button type="submit">رزرو کن</button>
+        </form>
     </body>
 </html>
